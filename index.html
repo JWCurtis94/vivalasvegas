@@ -4,23 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viva Las Vegas</title>
+    <title>Curtis Hotel's</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_USER_ID");
+        })();
+    </script>
 </head>
 
 <body>
-    <nav id="desktop-nav" aria-label="top navigation bar">
-        <div class="logo">Las Vegas</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Sites-&-Activites">Sites & Activites</a></li>
-                <li><a href="#Strip">Strip</a></li>
-                <li><a href="#Gallery">Gallery</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Curtis Hotel's</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#rooms">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
+
+    <header id="home" class="jumbotron text-center">
+        <div class="container">
+            <h1>Welcome to Curtis Hotel's</h1>
+            <p>Experience luxury and comfort like never before</p>
+            <a href="#rooms" class="btn btn-primary mt-3">View Rooms</a>
+        </div>
+    </header>
+
+    <section id="about" class="container my-5">
+        <h2 class="text-center">About Us</h2>
+        <p>Founded in 2024 by junior software developer James Curtis</p>
+        <img src="https://live.staticflickr.com/4356/37096397641_5e010deb0d_b.jpg" class="img-fluid rounded shadow" alt="Hotel Image">
+    </section>
+
+    <section id="rooms" class="container my-5">
+        <h2 class="text-center">Our Rooms</h2>
+        <div id="carouselRooms" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/f5/8c/02/burj-al-arab-jumeirah.jpg?w=700&h=-1&s=1" class="d-block w-100" alt="Deluxe Room">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Deluxe Room</h5>
+                        <p>Where luxury and comfort meet.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://familytravelgenie.com/media/wp-uploads/2022/03/Burj-Al-Arab-Sky-Marina-Suite.jpg" class="d-block w-100" alt="Suite">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Suite</h5>
+                        <p>Stunning views and space.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.myboutiquehotel.com/photos/110997/taj-dubai-dubai-004-78937-1110x700.jpg" class="d-block w-100" alt="Single Room">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Single Room</h5>
+                        <p>Stylish and affordable.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselRooms" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselRooms" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="container my-5">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Room Service</h4>
+                        <p class="card-text">Open 24/7 at the push of a button.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Swimming Pool</h4>
+                        <p class="card-text">Our rooftop infinity pool is sure to help you relax and take in some stunning scenery.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Spa</h4>
+                        <p class="card-text">Unwind in our spa and let all your problems steam away.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="mt-4">
+            <h4>Address</h4>
+            <p>32 London Bridge St, London SE1 9SG</p>
+            <h4>Phone</h4>
+            <p>+123 456 7890</p>
+            <h4>Email</h4>
+            <p>info@curtishotels.com</p>
+        </div>
+    </section>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Curtis Hotel's. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
