@@ -4,3 +4,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         e.preventDefault();
 
         let name = document.getElementById('name').value;
+
+        console.log('Form submitted with name:', name);
+    });
+});
