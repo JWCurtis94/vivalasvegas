@@ -109,8 +109,8 @@ body {
 /*----------------------------------Header Styling */
 header.jumbotron {
     position: relative;
-    height: 70vh;
-    background: url('') no-repeat center center/cover;
+    height: 50vh;
+    background: url('/assets/images/las\ vegas.webp') no-repeat center center/cover;
     color: white;
     display: flex;
     align-items: center;
