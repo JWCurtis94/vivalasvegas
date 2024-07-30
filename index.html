@@ -7,7 +7,20 @@
     <title>Curtis Hotel's</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        iframe {
+            margin: 0 auto;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,10 +59,9 @@
     </header>
 
     <section id="about" class="container my-5">
-        <h2 class="text-center">Sites & Activites</h2>
-        <p>Founded in 2024 by junior software developer James Curtis</p>
-        <img src="https://live.staticflickr.com/4356/37096397641_5e010deb0d_b.jpg" class="img-fluid rounded shadow" alt="Hotel Image">
-    </section>
+        <h2 class="text-center">Sites & Activities</h2>
+        <p class="text-center">Fly Through Vegas</p>
+        <iframe width="750" height="500" src="https://www.youtube.com/embed/pzO4Au1YN2k?si=fgwEbX2rrtiWhRXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <section id="rooms" class="container my-5">
         <h2 class="text-center">The Strip</h2>
@@ -119,7 +131,7 @@
     </section>
 
     <section id="contact" class="container my-5">
-        <h2 class="text-center">Contact Us</h2>
+        <h2 class="text-center">Sign Up For Our Newsletter</h2>
         <form id="contactForm">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -129,11 +141,8 @@
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter your email">
             </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <p class="error-message" id="error-message">Please enter a valid email address.</p>
         </form>
         <div class="mt-4">
             <h4>Address</h4>
@@ -146,7 +155,7 @@
     </section>
 
     <footer class="bg-light text-center py-4">
-        <p>&copy; 2024 Curtis Hotel's. All rights reserved.</p>
+        <p>&copy; CTRL+ALT+DEFEAT. All rights reserved.</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

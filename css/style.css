@@ -98,8 +98,8 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #9c0000d8;
-    color: #fff !important;
+    background-color: #c2c1c1;
+    color: #000;
 }
  
 .ml-auto {
