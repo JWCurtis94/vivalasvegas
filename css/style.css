@@ -98,8 +98,8 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #9c0000d8;
-    color: #ffffff !important;
+    background-color: #c2c1c1;
+    color: #000;
 }
  
 .ml-auto {
@@ -187,4 +187,32 @@ header.jumbotron .btn {
 
 }
 
+}
+
+/*----------------------------------Styling for About section */
+#about {
+    padding: 1rem 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+    color: #343a40;
+}
+
+#about p {
+    font-size: 1.75rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(191, 191, 191, 0.1);
+    margin-bottom: 1rem;
 }
