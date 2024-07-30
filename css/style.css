@@ -92,14 +92,14 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #303030;
+    color: #333;
     padding: 0.3rem 1rem;
     transition: background-color 0.4s, color 0.4s;
 }
 
 .nav-link:hover {
-    background-color: #c2c1c1;
-    color: #000;
+    background-color: #9c0000d8;
+    color: #fff !important;
 }
  
 .ml-auto {
