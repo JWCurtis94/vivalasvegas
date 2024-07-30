@@ -110,7 +110,7 @@ body {
 header.jumbotron {
     position: relative;
     height: 70vh;
-    background: url('assets/las vegas.webp') no-repeat center center/cover;
+    background: url('') no-repeat center center/cover;
     color: white;
     display: flex;
     align-items: center;
