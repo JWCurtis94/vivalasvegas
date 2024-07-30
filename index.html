@@ -4,27 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curtis Hotel's</title>
+    <title>Viva Las Vegas</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        /* Custom Styles */
+        body {
+            scroll-behavior: smooth;
         }
-        iframe {
-            margin: 0 auto;
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
         }
-        .text-center {
-            text-align: center;
+
+        .jumbotron {
+            background: url('https://yourimageurl.com') no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+        }
+
+        .jumbotron h1 {
+            font-size: 3rem;
+        }
+
+        .jumbotron p {
+            font-size: 1.5rem;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">Viva Las Vegas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,22 +68,22 @@
                     <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#sites-&-activites">Sites & Activites</a>
+                    <a class="nav-link" href="#sites-activities">Sites & Activities</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#the-strip">The Strip</a>
+                    <a class="nav-link" href="#rooms">The Strip</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Gallery</a>
+                    <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#news-letter">News Letter</a>
+                    <a class="nav-link" href="#contact">Newsletter</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <header id="home" class="jumbotron text-center">
+    <header id="home" class="jumbotron text-center d-flex align-items-center justify-content-center">
         <div class="container">
             <h1>The Viva Las Vegas Tour Guide</h1>
             <p>Welcome To Sin City</p>
@@ -58,10 +91,13 @@
         </div>
     </header>
 
-    <section id="about" class="container my-5">
+    <section id="sites-activities" class="container my-5">
         <h2 class="text-center">Sites & Activities</h2>
         <p class="text-center">Fly Through Vegas</p>
-        <iframe width="750" height="500" src="https://www.youtube.com/embed/pzO4Au1YN2k?si=fgwEbX2rrtiWhRXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pzO4Au1YN2k?si=fgwEbX2rrtiWhRXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
 
     <section id="rooms" class="container my-5">
         <h2 class="text-center">The Strip</h2>
@@ -142,16 +178,8 @@
                 <input type="email" class="form-control" id="email" placeholder="Enter your email">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-            <p class="error-message" id="error-message">Please enter a valid email address.</p>
+            <p class="error-message text-danger" id="error-message" style="display:none;">Please enter a valid email address.</p>
         </form>
-        <div class="mt-4">
-            <h4>Address</h4>
-            <p>32 London Bridge St, London SE1 9SG</p>
-            <h4>Phone</h4>
-            <p>+123 456 7890</p>
-            <h4>Email</h4>
-            <p>info@curtishotels.com</p>
-        </div>
     </section>
 
     <footer class="bg-light text-center py-4">
@@ -161,7 +189,23 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        $(document).ready(function () {
+            $('a.nav-link').on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
