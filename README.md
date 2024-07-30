@@ -6,8 +6,10 @@
 
 # Viva Las Vegas
 
+![Welcome to Vegas](https://www.pexels.com/photo/welcome-to-fabulous-las-vegas-nevada-signage-8295800/)
 
-> View live project here
+
+> [View live project here]()
 > 
 > This is a visitor guide to Las Vegas giving the user ideas on where to go and what to see in an easy to navigate and fun way. Accessible on a range of devices it is a handy way to get tourist information on this amazing destination.
 ---
@@ -55,7 +57,14 @@ INSERT WIREFRAMES HERE
 ---
 
 ## DESIGN
-		* 
+  - **Typography**
+    [Google Fonts](https://fonts.google.com/) was used to provide the Poppins font chosen
+  - **Colour scheme**
+    The colour scheme chosen was predominantly black, white and shades of light grey to give a minimal and stylish look to the site without detracting from the colourful images of the city.
+  - **Imagery**
+    The images chosen were felt to represent the fun and dynamic nature of Las Vegas and also it's contrasting feel from day to night.
+    The hero image was chosen to make a statement and make the user want to find out more about the city.
+    [Pexels](https://www.pexels.com/) was used to provide the royalty-free stock images used. Acknowledgements for the individual photographers are in the [credits](#credits) section
 
 
  ---
@@ -79,7 +88,23 @@ INSERT WIREFRAMES HERE
  ---
 
 ## TECHNOLOGIES USED
+  **Languages used**
+    - HTML5
+    - CSS
 
+  **Frameworks, libraries and programs used**
+    1. [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+        - Bootstrap was used to ensure the site was responsive and for styling
+    2. [Balsamiq](https://balsamiq.com/wireframes/)   
+        - Balsamiq was used to produce the wireframes in the design phase.
+    3. [Git](https://git-scm.com/)
+        - Git was used for version control
+    4. [Github](https://github.com/)
+        - GitHub was used to store the code and allow collaboration on the project.
+    5. [Google Fonts](https://fonts.google.com/)
+        - Google Fonts was used for the custom fonts
+    6. [Tiny.PNG](https://tinypng.com/)
+        - Tiny.PNG was used to compress images                  
 
 
  ---
@@ -95,6 +120,15 @@ INSERT WIREFRAMES HERE
  ---
 
 ## CREDITS
+ **Code used**
+  - [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/): Bootstrap Library was used throughout the project to make the site responsive at all breakpoints.
+
+**Content**
+**Media**
+  - README image was taken from [Pexels](https://www.pexels.com/) by Joseph Hewitt
+**Acknowledgements**
+  - Amy Richardson - For providing support and resources 
+  - Mark Briscoe - For providing technical knowledge and support with coding and GitHub/GitPod
 
 
 
