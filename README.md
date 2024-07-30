@@ -1,7 +1,7 @@
 
 
 
-> Written with [StackEdit](https://stackedit.io/).
+> 
 > 
 
 # Viva Las Vegas
@@ -44,7 +44,7 @@
 		 
 - **Returning visitor goals**
 		* As a returning visitor I want to be able to find more in depth information about Las Vegas
-		* As a returning visitor I want to be able to find where of where to go for more information
+		* As a returning visitor I want to be able to find where to go for more information
 
 - **Frequent visitor goals**
 		* As a frequent visitor I want to be able to sign up for a newsletter
@@ -104,7 +104,11 @@ INSERT WIREFRAMES HERE
     5. [Google Fonts](https://fonts.google.com/)
         - Google Fonts was used for the custom fonts
     6. [Tiny.PNG](https://tinypng.com/)
-        - Tiny.PNG was used to compress images                  
+        - Tiny.PNG was used to compress images
+    7. [StackEdit](https://stackedit.io/)
+        - StackEdit was used to assist with the markdown in the README.md
+    8. [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools)
+        - Used to troubleshoot and test design ideas and styling.                         
 
 
  ---
@@ -115,6 +119,13 @@ INSERT WIREFRAMES HERE
  ---
 
 ## TESTING
+The W3C Markup Validator and W3C CSS Validator Services were used to validate all pages of the code to ensure there were no syntax errors.
+    - [W3C Markup Validator](https://validator.w3.org/) - **insert link to validated code**
+    - [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) - **insert link to validated CSS**
+
+### Further Testing
+    - The website was tested on Google Chrome, Internet Explorer
+    - The website was viewed on a variety of screen sizes such as Desktop, Laptop, iPad Air, iPhone8   
 
 
  ---
@@ -124,6 +135,8 @@ INSERT WIREFRAMES HERE
   - [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/): Bootstrap Library was used throughout the project to make the site responsive at all breakpoints.
 
 **Content**
+   - [Kera Cudmore](https://github.com/kera-cudmore/readme-examples)
+   was used to help write the README.md
 **Media**
   - README image was taken from [Pexels](https://www.pexels.com/) by Joseph Hewitt
 **Acknowledgements**
