@@ -1,14 +1,19 @@
-/*----------------------------------Google fonts import */
+/*----------------------------------------Smooth Scroll Behaviour */
+html {
+    scroll-behavior: smooth;
+}
+
+/*----------------------------------------Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-/*----------------------------------Asterisk wildcard selector to override default styles added by the browser */
+/*----------------------------------------Asterisk wildcard selector to override default styles added by the browser */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*----------------------------------Global styles */
+/*----------------------------------------Global styles */
 body {
     font-family: 'Oswald', sans-serif;
     line-height: 1.6;
@@ -25,7 +30,32 @@ body {
     padding: 0 1rem;
 }
 
-/*----------------------------------Navbar Styling*/
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #7a0000;
+    border-color: #7a0000;
+    transform: translateY(-2px);
+}
+
+a {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #ff7f7f;
+    text-decoration: underline;
+}
+
+/*----------------------------------------Navbar Styling */
 .navbar {
     display: flex;
     align-items: center;
@@ -49,44 +79,54 @@ body {
 }
 
 .navbar-toggler {
+    cursor: pointer;
     border: none;
     background: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aria-expanded: "false";
+    aria-controls: "navbarContent";
 }
 
 .navbar-toggler-icon {
     width: 30px;
-    height: 3px;
+    height: 2px;
     background-color: #333;
     display: block;
     position: relative;
 }
 
 .navbar-toggler-icon::before,
-.navbar-toggler-icon::after { 
+.navbar-toggler-icon::after {
     content: '';
     width: 30px;
-    height: 3px;
+    height: 2px;
     background-color: #333;
-    display: block;
     position: absolute;
     left: 0;
 }
 
 .navbar-toggler-icon::before {
-    top: -10px;
+    top: -8px;
 }
 
 .navbar-toggler-icon::after {
-    top: 10px;
+    top: 8px;
 }
 
 .collapse {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
 }
 
-.navbar-nav { 
+.collapse.show {
+    display: flex;
+}
+
+.navbar-nav {
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -108,12 +148,23 @@ body {
 .nav-item .nav-link:hover {
     color: #9a0000 !important;
 }
- 
+
 .ml-auto {
     margin-left: auto;
 }
 
-/*----------------------------------Header Styling */
+/* Header Styling */
+header.jumbotron {
+    position: relative;
+    height: 65vh;
+    margin-top: 3rem;
+    background: url('/assets/images/las vegas.webp') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 header.jumbotron::after {
     content: '';
@@ -134,7 +185,6 @@ header.jumbotron h1 {
     font-size: 5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-
 }
 
 header.jumbotron p {
@@ -143,74 +193,21 @@ header.jumbotron p {
     color: #fff;
 }
 
-
 header.jumbotron .btn {
     font-size: 1.25rem;
     padding: 0.5rem 1rem;
     background-color: #9a0000;
     border-color: #9a0000;
 }
- 
 
-/*----------------------------------Resposive styling for devices with 768px max-width*/
-@media (max-width: 768px) {
-
-.navbar-nav {
-    flex-direction: column;
-    width: 100%;
-}
-
-.nav-item {
-    margin-left: 0;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.collapse {
-    flex-direction: column;
-}
-
-header.jumbotron h1 {
-    font-size: 2.5rem;
-}
-
-header.jumbotron p {
-    font-size: 1.25rem;
-
-}
-
-header.jumbotron .btn {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-
-}
-
-.collage {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-}
-
-/*----------------------------------YouTube Video*/
-iframe {
-    margin: 0 auto;
-}
-
-/*----------------------------------Resposive styling for devices with 576px max-width*/
-@media (max-width: 576px) {
-    .collage {
-        grid-template-columns: 1fr;
-    }
-}
-
-/*----------------------------------Section Styling*/
+/* Section Styling */
 section {
     padding: 2rem 0;
     background-color: #f8f9fa;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
     color: #434343;
@@ -218,14 +215,15 @@ h2 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #434343;
     margin-bottom: 2rem;
+    margin-top: 1rem;
     text-align: center;
     line-height: 1.8;
 }
 
-/*----------------------------------Gallery Collage Style*/
+/* Gallery Collage Style */
 .collage {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -245,7 +243,12 @@ p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/*----------------------------------Newsletter Styling*/
+/* YouTube Video */
+iframe {
+    margin: 0 auto;
+}
+
+/* Newsletter Styling */
 .newsletter {
     background-color: #b0afaf;
     padding: 2rem;
@@ -274,13 +277,17 @@ p {
 
 .newsletter input[type="text"],
 .newsletter input[type="email"] {
-    width: 100%;
-    max-width: 500px;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    border: 1.5px solid #000000;
-    border-radius: 7px;
-    font-size: 1.15rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter input[type="text"]:focus,
+.newsletter input[type="email"]:focus {
+    border-color: #9a0000;
+    outline: none;
 }
 
 .newsletter button[type="submit"] {
@@ -310,7 +317,7 @@ p {
     color: #1b1b1b;
 }
 
-/*----------------------------------Footer Styling*/
+/* Footer Styling */
 footer {
     padding: 2rem 0;
     border-top: 1px solid #e7e7e7;
@@ -320,7 +327,7 @@ footer {
 }
 
 footer p {
-    margin: 0;
+    margin: 0.5rem 0;
     font-size: 1rem;
     color: #000000;
     text-align: center;
@@ -337,12 +344,18 @@ footer a:hover {
 }
 
 .footer-social-icons {
-    margin-top: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
 }
 
 .footer-social-icons a {
     margin: 0 10px;
     display: inline-block;
+}
+
+.footer-social-icons a:hover {
+    color: #ff7f7f;
 }
 
 .footer-social-icons img {
@@ -353,4 +366,97 @@ footer a:hover {
 
 .footer-social-icons img:hover {
     transform: scale(1.2);
+}
+
+/* Responsive styling for tablets (min-width: 92px) */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive styling for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .collapse {
+        flex-direction: column;
+    }
+
+    header.jumbotron {
+        height: 50vh;
+        background-size: cover;
+    }
+
+    header.jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    header.jumbotron p {
+        font-size: 1.25rem;
+    }
+
+    header.jumbotron .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .collage {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+/* Responsive styling for mobiles (max-width: 576px) */
+@media (max-width: 576px) {
+    header.jumbotron {
+        height: 40vh;
+        background-size: cover;
+    }
+
+    header.jumbotron h1 {
+        font-size: 2rem;
+    }
+
+    header.jumbotron p {
+        font-size: 1rem;
+    }
+
+    header.jumbotron .btn {
+        font-size: 0.875rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .collage {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
 }
