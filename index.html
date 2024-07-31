@@ -36,7 +36,14 @@
         </div>
     </nav>
 
-    <header id="home" class="jumbotron text-center d-flex align-items-center justify-content-center">
+    <header id="home" class="jumbotron text-center d-flex align-items-center justify-content-center" style="position: relative;
+    height: 65vh;
+    background: url(assets/images/las\ vegas.webp) no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;">
         <div class="container">
             <h1>The Viva Las Vegas Tour Guide</h1>
             <p>Welcome To Sin City</p>
@@ -103,7 +110,7 @@
         </section>
     </section>
     <script>
-        document.getElementById('newsletter').addEventListener('submit', function(event) {
+        document.getElementById('newsletter').addEventListener('submit', function (event) {
             event.preventDefault();
 
             const name = document.getElementById('name').value;

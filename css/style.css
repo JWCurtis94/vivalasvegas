@@ -114,16 +114,6 @@ body {
 }
 
 /*----------------------------------Header Styling */
-header.jumbotron {
-    position: relative;
-    height: 65vh;
-    background: url('/assets/images/las\ vegas.webp') no-repeat center center/cover;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
 header.jumbotron::after {
     content: '';
