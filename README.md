@@ -6,7 +6,7 @@
 
 # Viva Las Vegas
 
-![Welcome to Vegas](https://www.pexels.com/photo/welcome-to-fabulous-las-vegas-nevada-signage-8295800/)
+![Welcome to Vegas](readme-docs/landing-screenshot.png)
 
 
 > [View live project here]()
@@ -20,13 +20,18 @@
 ## CONTENTS
 
  - [User experience design (UXD)](#user-experience-design)
-		 - user stories
+		 
+     - user stories
  - [Creation process](#creation-process)
-		 - wireframes
+		 
+     - wireframes
  - [Design](#design)
-		 - Colour scheme
-		 - Typography
-		 - Imagery
+		 
+     - Colour scheme
+		 
+     - Typography
+		 
+     - Imagery
  - [Website features](#website-features)
  - [Tablet/mobile view](#tablet/mobile-view)
  - [Future features](#future-features)
@@ -38,16 +43,23 @@
  ## USER EXPERIENCE DESIGN
  
  - **First time visitor goals**
-		 * As a first time visitor I want to know what the aim of the site is and the information I can gain from it
-		 * As a first time visitor I want to be able to navigate the site easily and be able to return to different sections
-		 * As a first time user I want to be able to view the site on a variety of different devices and have the content appear in a logical way
+		 
+     * As a first time visitor I want to know what the aim of the site is and the information I can gain from it
+		 
+     * As a first time visitor I want to be able to navigate the site easily and be able to return to different sections
+		 
+     * As a first time user I want to be able to view the site on a variety of different devices and have the content appear in a logical way
 		 
 - **Returning visitor goals**
-		* As a returning visitor I want to be able to find more in depth information about Las Vegas
-		* As a returning visitor I want to be able to find where to go for more information
+		
+    
+    * As a returning visitor I want to be able to find more in depth information about Las Vegas
+		
+    * As a returning visitor I want to be able to find where to go for more information
 
 - **Frequent visitor goals**
-		* As a frequent visitor I want to be able to sign up for a newsletter
+		
+    * As a frequent visitor I want to be able to sign up for a newsletter
 ---
 
 ## CREATION PROCESS
@@ -67,12 +79,24 @@ INSERT WIREFRAMES HERE
     
     The images chosen were felt to represent the fun and dynamic nature of Las Vegas and also it's contrasting feel from day to night.
     The hero image was chosen to make a statement and make the user want to find out more about the city.
-    [Pexels](https://www.pexels.com/) was used to provide the royalty-free stock images used. Acknowledgements for the individual photographers are in the [credits](#credits) section
+    [Pexels](https://www.pexels.com/) was used to provide the royalty-free stock images used. Acknowledgements for the individual photographers are in the [credits](#credits) section.
+
+    The video on the landing page is a mnc no copyright music video from [YouTube](https://www.youtube.com/embed/pzO4Au1YN2k?si=fgwEbX2rrtiWhRXX) 
 
 
  ---
 
 ## WEBSITE FEATURES
+
+  **NAVBAR**
+  ![navbar](readme-docs/navbar.png)
+
+  The navbar appears as above on desktop and laptops with the menu links collapsing down to a burger icon on tablet and mobile screens
+
+  **HERO IMAGE**
+
+
+  The hero image remains the same across all devices
 
 
 
@@ -91,6 +115,7 @@ INSERT WIREFRAMES HERE
  ---
 
 ## TECHNOLOGIES USED
+
   **Languages used**
     - HTML5
     - CSS
@@ -113,7 +138,11 @@ INSERT WIREFRAMES HERE
   7. [StackEdit](https://stackedit.io/)
         - StackEdit was used to assist with the markdown in the README.md
   8. [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools)
-        - Used to troubleshoot and test design ideas and styling.                         
+        - Used to troubleshoot and test design ideas and styling.   
+  9.  [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)  
+        - used to test performance of the website
+  10. [Favicon](https://favicon.io/#google_vignette)
+        - used to generate the favicon                                
 
 
  ---
@@ -131,7 +160,9 @@ INSERT WIREFRAMES HERE
 
 ### Further Testing
   - The website was tested on Google Chrome, Internet Explorer
-  - The website was viewed on a variety of screen sizes such as Desktop, Laptop, iPad Air, iPhone8   
+  - The website was viewed on a variety of screen sizes such as Desktop, Laptop, iPad Air, iPhone8
+
+### Accessibility     
 
 
  ---
