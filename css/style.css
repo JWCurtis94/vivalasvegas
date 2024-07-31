@@ -150,6 +150,7 @@ header.jumbotron h1 {
 header.jumbotron p {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 
@@ -222,15 +223,15 @@ h2 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
-    color: #343a40;
+    color: #434343;
     text-align: center;
 }
 
 p {
     font-size: 1.2rem;
-    color: #6c757d;
+    color: #434343;
     margin-bottom: 2rem;
-    text-align: justify;
+    text-align: center;
     line-height: 1.8;
 }
 
@@ -317,4 +318,49 @@ p {
     font-size: 1.5rem;
     font-weight: bold;
     color: #1b1b1b;
+}
+
+/*----------------------------------Footer Styling*/
+footer {
+    padding: 2rem 0;
+    border-top: 1px solid #e7e7e7;
+    color: #000000;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+}
+
+footer a {
+    color: #000000;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff7f7f;
+}
+
+.footer-social-icons {
+    margin-top: 1rem;
+}
+
+.footer-social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+    transform: scale(1.2);
 }
