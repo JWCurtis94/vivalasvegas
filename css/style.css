@@ -216,6 +216,21 @@ header.jumbotron .btn {
     margin-bottom: 1rem;
 }
 
+/*----------------------------------YouTube Video*/
 iframe {
     margin: 0 auto;
+}
+
+/*----------------------------------Gallery Collage Style*/
+.collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
