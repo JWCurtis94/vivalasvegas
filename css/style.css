@@ -23,20 +23,20 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: #ffffff;
+    background-color: #b0afaf !important;
     border-bottom: 0.5px solid #000000;
 }
 
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #000000 !important;
     text-decoration: none;
     transition: all 0.7s ease-in-out;
 }
 
 .navbar-brand:hover {
-    color: #ff7f7f;
+    color: #9a0000 !important;
     transform: scale(1.1);
 }
 
@@ -92,14 +92,13 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #000000 !important;
     padding: 0.3rem 1rem;
     transition: background-color 0.4s, color 0.4s;
 }
 
-.nav-link:hover {
-    background-color: #c2c1c1;
-    color: #000;
+.nav-item .nav-link:hover {
+    color: #9a0000 !important;
 }
  
 .ml-auto {
@@ -109,7 +108,7 @@ body {
 /*----------------------------------Header Styling */
 header.jumbotron {
     position: relative;
-    height: 50vh;
+    height: 65vh;
     background: url('/assets/images/las\ vegas.webp') no-repeat center center/cover;
     color: white;
     display: flex;
