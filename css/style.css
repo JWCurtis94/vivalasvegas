@@ -8,13 +8,21 @@
     box-sizing: border-box;
 }
 
-/*----------------------------------General styles */
+/*----------------------------------Global styles */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #6d6d6d;
     font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /*----------------------------------Navbar Styling*/
@@ -186,6 +194,16 @@ header.jumbotron .btn {
 
 }
 
+.collage {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media (max-width: 576px) {
+    .collage {
+        grid-template-columns: 1fr;
+    }
 }
 
 /*----------------------------------Styling for About section */
@@ -221,16 +239,44 @@ iframe {
     margin: 0 auto;
 }
 
+/*----------------------------------Section Styling*/
+section {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #343a40;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
 /*----------------------------------Gallery Collage Style*/
 .collage {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
 }
+
 .collage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collage img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
