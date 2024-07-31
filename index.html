@@ -7,6 +7,8 @@
     <title>Viva Las Vegas</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" sizes="16x16" href="assets/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="assets/favicon/favicon-32x32.png" type="image/png">
 </head>
 
 <body>
@@ -22,7 +24,7 @@
                     <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#sites-activities">Sites & Activities</a>
+                    <a class="nav-link" href="#sites-activities">Sites &amp; Activities</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#the-strip">The Strip</a>
@@ -43,7 +45,7 @@
     </header>
 
     <section id="sites-activities" class="container my-5">
-        <h2 class="text-center">Sites & Activities</h2>
+        <h2 class="text-center">Sites &amp; Activities</h2>
         <p class="text-center">Fly Through Vegas</p>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pzO4Au1YN2k?si=fgwEbX2rrtiWhRXX"
@@ -99,26 +101,24 @@
             </div>
         </section>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script>
-        document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+        document.getElementById('newsletter').addEventListener('submit', function(event) {
             event.preventDefault();
 
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
 
             if (name && email) {
-                document.getElementById('newsletterForm').style.display = 'none';
+                document.getElementById('newsletter').style.display = 'none';
                 document.getElementById('thankYouMessage').style.display = 'block';
             } else {
                 alert('Please fill in all fields.');
             }
         });
     </script>
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 CTRL+ALT+DEFEAT. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
