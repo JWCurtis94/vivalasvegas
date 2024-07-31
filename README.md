@@ -167,18 +167,24 @@
  ---
 
 ## FUTURE FEATURES
+The following would be options to coonsider including in future versions of the website:
+  - more sections added to include 'Where to get married', 'The best casinos', 'Tours', and 'Clubs'
+
+  - the ability to book hotels
+
+  - a dedicated gallery page
 
 
 
- ---
 
 ## TECHNOLOGIES USED
 
-  **Languages used**
-    - HTML5
-    - CSS
+  ### Languages used
+  - HTML5
 
-  **Frameworks, libraries and programs used**
+  - CSS
+
+  ### Frameworks, libraries and programs used
 
    
   1. [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
@@ -200,12 +206,43 @@
   9.  [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)  
         - used to test performance of the website
   10. [Favicon](https://favicon.io/#google_vignette)
-        - used to generate the favicon                                
+        - used to generate the favicon  
+  11. [W3 Schools](https://www.w3schools.com/)
+        - used to look up syntax for HTML and CSS
+  12. [Stack Overflow](https://stackoverflow.com/)                  
+        - used for queries around coding
+  13. [Perplexity](https://www.perplexity.ai/)    
+        - used to provide sources to generate text for the website   
+  14. [Wikipedia](https://www.wikipedia.org/)      
+        - used to generate text
+  15. [Write human](https://www.writehuman.ai)
+        - used to humanise generated text
+  16. [Wallpaper cave](https://wallpapercave.com/)    
+        - used for copyright free images
+  17. [Pexels](https://www.pexels.com/)
+        - used for copyright free images
+  18. [W3C HTML validator](https://validator.w3.org/)
+        - used to validate the HTML
+  19. [W3 Jigsaw](https://jigsaw.w3.org/css-validator/)
+        - used to validate the CSS
+
 
 
  ---
 
 ## DEPLOYMENT
+The site was deployed via GitHub using the following steps:
+1. Log in to GitHub account
+2. Go to the Settings tab of the vivalasvegas repository
+3. On the left-hand sidebar, in the Code and automation section, select Pages
+4. Make sure:
+    - Source is set to 'Deploy from Branch'.
+    - Main branch is selected.
+    - Folder is set to / (root).
+5. Under Branch, click Save.
+6. Go back to the Code tab. Wait a few minutes for the build to finish and refresh the repository.
+7. On the right-hand side, in the Environments section, click on 'github-pages'.
+8. Click View deployment to see the live site    
 
 
  ---
