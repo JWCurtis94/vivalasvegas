@@ -13,7 +13,8 @@
 > 
 > This is a visitor guide to Las Vegas giving the user ideas on where to go and what to see in an easy to navigate and fun way. Accessible on a range of devices it is a handy way to get tourist information on this amazing destination.
 ---
-> RESPONSIVITY IMAGES - insert here
+> 
+![responsivity image](readme-docs/responsivity.png)
 >
 ---
 
