@@ -156,8 +156,8 @@ header.jumbotron p {
 header.jumbotron .btn {
     font-size: 1.25rem;
     padding: 0.5rem 1rem;
-    background-color: #9c0000d8;
-    border-color: #9c0000d8;
+    background-color: #9a0000;
+    border-color: #9a0000;
 }
  
 
@@ -200,43 +200,16 @@ header.jumbotron .btn {
 
 }
 
+/*----------------------------------YouTube Video*/
+iframe {
+    margin: 0 auto;
+}
+
+/*----------------------------------Resposive styling for devices with 576px max-width*/
 @media (max-width: 576px) {
     .collage {
         grid-template-columns: 1fr;
     }
-}
-
-/*----------------------------------Styling for About section */
-#about {
-    padding: 1rem 0;
-    background-color: #f8f9fa;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1.25rem;
-    color: #343a40;
-}
-
-#about p {
-    font-size: 1.75rem;
-    color: #6c757d;
-    margin-bottom: 1rem;
-}
-
-#about img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(191, 191, 191, 0.1);
-    margin-bottom: 1rem;
-}
-
-/*----------------------------------YouTube Video*/
-iframe {
-    margin: 0 auto;
 }
 
 /*----------------------------------Section Styling*/
@@ -279,4 +252,69 @@ p {
 .collage img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*----------------------------------Newsletter Styling*/
+.newsletter {
+    background-color: #b0afaf;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter label {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #000000;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1.5px solid #000000;
+    border-radius: 7px;
+    font-size: 1.15rem;
+}
+
+.newsletter button[type="submit"] {
+    background-color: #9a0000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button[type="submit"]:hover {
+    background-color: #9a0000;
+}
+
+#thankYouMessage {
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+#thankYouMessage h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1b1b1b;
 }
