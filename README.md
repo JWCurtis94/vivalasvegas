@@ -255,24 +255,71 @@ The site was deployed via GitHub using the following steps:
   - [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) - **insert link to validated CSS**
 
 ### Further Testing
-  - The website was tested on Google Chrome, Internet Explorer
-  - The website was viewed on a variety of screen sizes such as Desktop, Laptop, iPad Air, iPhone8
+  - The website was tested on Google Chrome, Safari, Firefox and Microsoft Edge and performance was good across all platforms. The only issue was a change in font.
+  - The website was viewed on a variety of screen sizes such as Desktop, Laptop, iPad Air, iPhone8, and Samsung Galaxy S25 ultra.
+
+  Each feature was tested with the following results:
+
+  | Feature | Test | Pass/fail |
+  | ---| ---| ---|
+  | Navbar | Home link | Pass |
+  | Navbar | Sites and activities link | Pass |
+  | Navbar | The Strip link | Pass |
+  | Navbar | Newsletter link | Pass |
+  | Buttons | Newsletter | Pass|
+  | Logo | Viva Las Vegas | Pass|
+  | Form | Name placeholder hover | Pass|
+  | Form | Name no entry prompt | Pass |
+  | Form | Email placeholder hover | Pass |
+  | Form | Email incorrect entry prompt | Pass |
+  | Form | Subscribe button | Pass |
+  | Form | Thankyou message | Pass |
+
+## Lighthouse scores via Chrome dev tools 
+
+![Lighthouse scores](readme-docs/lighthouse.png)
+  
 
 ### Accessibility     
 
+The site was tested via WAVE the web accessibility evaluation tool and gave the following results:
 
- ---
+![WAVE image](readme-docs/WAVE.png)
+
+<br>
+
+The contrast errors shown were for the text in the hero image. The main image is relatively dark but the text is white and stands out well.
+One of the alerts was for the YouTube video used but this is beyond the bounds of our course to improve at the moment.
+
+### Issues/Bugs
+
+ - The hero image was not showing in full and was being cut off at the top of the screen which was solved by changing the styling in the CSS.
+
+  - The hero image wasn't showing on deployment which was solved by changing the link from a URL in the HTML to adding the image as an asset and proving the link via a filepath.
+
+   - The burger icon was not opening on the mobile view which was caused by some of the Bootstrap script having been erased in error.
+
+   - The images in the feature sections were not responsive on smaller screens and were showing in a row rather than a column. This was resolved by changing the bootstrap classes.
+
+   - It was realised after deployment that all of the images would benefit from being optimised using [TinyPNG](https://tinypng.com/) 
+
+
 
 ## CREDITS
- **Code used**
-  - [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/): Bootstrap Library was used throughout the project to make the site responsive at all breakpoints.
 
 **Content**
   - [Kera Cudmore/readme-examples on GitHub](https://github.com/kera-cudmore/readme-examples)
    was used to help write the README.md
-
+  - [Code Institute Sample README](https://github.com/Code-Institute-Solutions/SampleREADME)
+  was used as a reference when writing the README.
+  - [Wikipedia](https://www.wikipedia.org/) was used to provide text for the features sections
+  - [Code Institute](https://learn.codeinstitute.net/) was used for extra reference for HTML and CSS
+  - [W3 Schools](https://www.w3schools.com/) was used for reference on syntax
+  - [Stack Overflow](https://stackoverflow.com/) was used for syntax and coding queries
+  
 **Media**
-  - README image was taken from [Pexels](https://www.pexels.com/) by Joseph Hewitt
+  - All images were taken from [Pexels](https://www.pexels.com/) and [Wallpaper Cave](https://wallpapercave.com/). Credit to the individual artists: Joseph Hewitt, Isabella Mendes, Javon Swaby, Edoardo Tommasini, Luis Erives, Quintin Gellar, Daavid Guerrero, Kamsy and Juan Ortiz Jr
+  - [Amiresponsive](https://ui.dev/amiresponsive) for the responsivity mockup on the README.
 
 **Acknowledgements**
   - Amy Richardson - For providing support and resources 
