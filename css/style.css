@@ -400,7 +400,8 @@ footer p {
     }
 
     header.jumbotron h1 {
-        font-size: 2.5rem;
+        padding-top: 2rem;
+        font-size: 1.5rem;
     }
 
     header.jumbotron p {
