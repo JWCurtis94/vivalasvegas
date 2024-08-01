@@ -153,12 +153,11 @@ a:focus {
     margin-left: auto;
 }
 
-/* Header Styling */
-header.jumbotron {
+/*----------------------------------------Header Styling */
+.jumbotron {
     position: relative;
-    height: 65vh;
-    margin-top: 3rem;
-    background: url('/assets/images/las vegas.webp') no-repeat center center/cover;
+    height: 80vh;
+    background: url(/assets/images/las\ vegas.jpg) no-repeat center center/cover;
     color: white;
     display: flex;
     align-items: center;
@@ -185,6 +184,7 @@ header.jumbotron h1 {
     font-size: 5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    margin-top: 5rem;
 }
 
 header.jumbotron p {
@@ -198,9 +198,10 @@ header.jumbotron .btn {
     padding: 0.5rem 1rem;
     background-color: #9a0000;
     border-color: #9a0000;
+    margin-bottom: 1.5rem;
 }
 
-/* Section Styling */
+/*----------------------------------------Section Styling */
 section {
     padding: 2rem 0;
     background-color: #f8f9fa;
@@ -223,7 +224,7 @@ p {
     line-height: 1.8;
 }
 
-/* Gallery Collage Style */
+/*----------------------------------------Gallery Collage Style */
 .collage {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -243,12 +244,12 @@ p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* YouTube Video */
+/*----------------------------------------YouTube Video */
 iframe {
     margin: 0 auto;
 }
 
-/* Newsletter Styling */
+/*----------------------------------------Newsletter Styling */
 .newsletter {
     background-color: #b0afaf;
     padding: 2rem;
@@ -317,7 +318,7 @@ iframe {
     color: #1b1b1b;
 }
 
-/* Footer Styling */
+/*----------------------------------------Footer Styling */
 footer {
     padding: 2rem 0;
     border-top: 1px solid #e7e7e7;
@@ -333,42 +334,7 @@ footer p {
     text-align: center;
 }
 
-footer a {
-    color: #000000;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #ff7f7f;
-}
-
-.footer-social-icons {
-    color: #333;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-.footer-social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.footer-social-icons a:hover {
-    color: #ff7f7f;
-}
-
-.footer-social-icons img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-}
-
-.footer-social-icons img:hover {
-    transform: scale(1.2);
-}
-
-/* Responsive styling for tablets (min-width: 92px) */
+/*----------------------------------------Responsive styling for tablets (min-width: 92px) */
 @media (min-width: 992px) {
     h1 {
         font-size: 4.5rem;
@@ -379,7 +345,7 @@ footer a:hover {
     }
 }
 
-/* Responsive styling for tablets (max-width: 768px) */
+/*----------------------------------------Responsive styling for tablets (max-width: 768px) */
 @media (max-width: 768px) {
 
     .navbar-nav {
@@ -428,7 +394,7 @@ footer a:hover {
     }
 }
 
-/* Responsive styling for mobiles (max-width: 576px) */
+/*----------------------------------------Responsive styling for mobiles (max-width: 576px) */
 @media (max-width: 576px) {
     header.jumbotron {
         height: 40vh;
