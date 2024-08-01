@@ -337,6 +337,21 @@ footer p {
     color: #9a0000;
 }
 
+.footer-github-links {
+    margin-top: 1rem;
+}
+
+.footer-github-links a {
+    color: #000;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-github-links a:hover {
+    color: #9a0000;
+}
+
 /*----------------------------------------Responsive styling for tablets (min-width: 992px) */
 @media (min-width: 992px) {
     h1 {
