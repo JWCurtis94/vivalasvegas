@@ -20,7 +20,6 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .container {
@@ -86,8 +85,6 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    aria-expanded: "false";
-    aria-controls: "navbarContent";
 }
 
 .navbar-toggler-icon {
@@ -134,8 +131,7 @@ a:focus {
 }
 
 .nav-item {
-    margin-right: 2rem;
-    margin-left: 1rem;
+    margin: 0 1rem;
 }
 
 .nav-link {
@@ -157,12 +153,8 @@ a:focus {
 header.jumbotron {
     position: relative;
     height: 80vh;
-    background: url("https://jwcurtis94.github.io/vivalasvegas/assets/images/las-vegas.jpg") no-repeat center center/cover;
+    background: url("../assets/images/las-vegas.jpg") no-repeat center center/cover;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 header.jumbotron::after {
@@ -218,8 +210,7 @@ h2 {
 p {
     font-size: 1rem;
     color: #434343;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    margin: 1rem 0 2rem;
     text-align: center;
     line-height: 1.8;
 }
@@ -304,12 +295,12 @@ iframe {
 }
 
 .newsletter button[type="submit"]:hover {
-    background-color: #9a0000;
+    background-color: #7a0000;
 }
 
 #thankYouMessage {
     margin-top: 2rem;
-    display: inline-block;
+    display: none;
 }
 
 #thankYouMessage h2 {
@@ -329,13 +320,10 @@ footer {
 footer p {
     margin: 0.5rem 0;
     font-size: 1rem;
-    color: #000000;
-    text-align: center;
 }
 
 .footer-social-icons {
     margin-top: 1rem;
-    text-align: center;
 }
 
 .footer-social-icons a {
@@ -349,7 +337,7 @@ footer p {
     color: #9a0000;
 }
 
-/*----------------------------------------Responsive styling for tablets (min-width: 92px) */
+/*----------------------------------------Responsive styling for tablets (min-width: 992px) */
 @media (min-width: 992px) {
     h1 {
         font-size: 4.5rem;
@@ -362,7 +350,6 @@ footer p {
 
 /*----------------------------------------Responsive styling for tablets (max-width: 768px) */
 @media (max-width: 768px) {
-
     .navbar-nav {
         flex-direction: column;
         width: 100%;
@@ -384,6 +371,34 @@ footer p {
     }
 
     header.jumbotron h1 {
+        font-size: 3.5rem;
+    }
+
+    header.jumbotron p {
+        font-size: 2rem;
+    }
+
+    .collage {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+/*----------------------------------------Responsive styling for mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header.jumbotron h1 {
         font-size: 2.5rem;
     }
 
@@ -391,53 +406,21 @@ footer p {
         font-size: 1.25rem;
     }
 
-    header.jumbotron .btn {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-
-    .collage {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    p {
-        font-size: 1.25rem;
-    }
-}
-
-/*----------------------------------------Responsive styling for mobiles (max-width: 576px) */
-@media (max-width: 576px) {
-    header.jumbotron {
-        height: 40vh;
-        background-size: cover;
-    }
-
-    header.jumbotron h1 {
-        font-size: 2rem;
-    }
-
-    header.jumbotron p {
-        font-size: 1rem;
-    }
-
-    header.jumbotron .btn {
-        font-size: 0.875rem;
-        padding: 0.4rem 0.8rem;
-    }
-
     .collage {
         grid-template-columns: 1fr;
     }
 
-    h1 {
-        font-size: 3.5rem;
+    h2 {
+        font-size: 2rem;
     }
 
     p {
-        font-size: 1.125rem;
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
     }
 }
+
