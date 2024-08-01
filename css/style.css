@@ -157,7 +157,7 @@ a:focus {
 .jumbotron {
     position: relative;
     height: 80vh;
-    background: url(/assets/images/las\ vegas.jpg) no-repeat center center/cover;
+    background: url(/assets/images/las-vegas.jpg) no-repeat center center/cover;
     color: white;
     display: flex;
     align-items: center;
