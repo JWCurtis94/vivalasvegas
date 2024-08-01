@@ -160,7 +160,12 @@
   ![newsletter image](readme-docs/newsletter-feature.png)
   </details>
 
-
+  **SOCIAL LINKS FEATURE**
+  <details>
+  <summary>Social links image</summary
+    
+  ![newsletter image](readme-docs/social-links.png)
+  </details>
 
 
 
@@ -274,6 +279,14 @@ The site was deployed via GitHub using the following steps:
   | Form | Email incorrect entry prompt | Pass |
   | Form | Subscribe button | Pass |
   | Form | Thankyou message | Pass |
+  | Social links| Facebook - hover | Pass|
+  | Social links | Facebook - opens in new tab | Pass |
+  | Social links | Twitter - hover | Pass |
+  | Social links | Twitter - opens in new tab | Pass |
+  | Social links | Instagram - hover | Pass |
+  | Social links | Instagram - opens in new tab | Pass |
+  | Social links | LinkedIn - hover | Pass |
+  | Social links | LinkedIn - opens in new tab | Pass |
 
 ## Lighthouse scores via Chrome dev tools 
 
